@@ -2,23 +2,13 @@
  A repository for the capstone project of my Coursera/IBM Data Science professional certificate
 
 # Instructions received:
- For this assignment, you will be required to explore and cluster the neighborhoods in Toronto.
+In this assignment, you will be required to explore, segment, and cluster the neighborhoods in the city of Toronto. However, unlike New York, the neighborhood data is not readily available on the internet. What is interesting about the field of data science is that each project can be challenging in its unique way, so you need to learn to be agile and refine the skill to learn new libraries and tools quickly depending on the project.
 
- 1 Start by creating a new Notebook for this assignment.
- 2 Use the Notebook to build the code to scrape the following Wikipedia page,  https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M, in order to obtain the data that is in the table of postal codes and to   transform the data into a pandas dataframe
- 3. To create the above dataframe:
+For the Toronto neighborhood data, a Wikipedia page exists that has all the information we need to explore and cluster the neighborhoods in Toronto. You will be required to scrape the Wikipedia page and wrangle the data, clean it, and then read it into a pandas dataframe so that it is in a structured format like the New York dataset.
 
-The dataframe will consist of three columns: PostalCode, Borough, and Neighborhood
-Only process the cells that have an assigned borough. Ignore cells with a borough that is Not assigned.
-More than one neighborhood can exist in one postal code area. For example, in the table on the Wikipedia page, you will notice that M5A is listed twice and has two neighborhoods: Harbourfront and Regent Park. These two rows will be combined into one row with the neighborhoods separated with a comma as shown in row 11 in the above table.
-If a cell has a borough but a Not assigned neighborhood, then the neighborhood will be the same as the borough.
-Clean your Notebook and add Markdown cells to explain your work and any assumptions you are making.
-In the last cell of your notebook, use the .shape method to print the number of rows of your dataframe.
-4. Submit a link to your Notebook on your Github repository. (10 marks)
+Once the data is in a structured format, you can replicate the analysis that we did to the New York City dataset to explore and cluster the neighborhoods in the city of Toronto.
 
-Note: There are different website scraping libraries and packages in Python. For scraping the above table, you can simply use pandas to read the table into a pandas dataframe.
-
-Another way, which would help to learn for more complicated cases of web scraping is using the BeautifulSoup package. Here is the package's main documentation page: http://beautiful-soup-4.readthedocs.io/en/latest/
+Your submission will be a link to your Jupyter Notebook on your Github repository.
 
 The package is so popular that there is a plethora of tutorials and examples on how to use it. Here is a very good Youtube video on how to use the BeautifulSoup package: https://www.youtube.com/watch?v=ng2o98k983k
 
